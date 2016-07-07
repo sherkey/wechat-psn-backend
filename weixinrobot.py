@@ -1,17 +1,17 @@
-# -*- coding:utf-8 -*-
-# import werobot
+#!/usr/bin/env python
+# encoding: utf-8
 
-# #robot = werobot.WeRoBot(token='robot', enable_session=True, session_storage=saekvstorage.SaeKVDBStorage())
-# #robot = werobot.WeRoBot(token='testrobot', enable_session=True, session_storage=filestorage.FileStorage())
-# robot = werobot.WeRoBot(token='testrobot', enable_session=True)
 
-# @robot.subscribe
-# def subscribe(message):
-#     return '欢迎关注本公众号！'
-
-# @robot.handler
-# def echo(message):
-#     return 'hello'
+"""
+@version: ??
+@author: liangliang
+@license: Apache Licence 
+@contact: liangliangyy@gmail.com
+@site: http://www.lylinux.org
+@software: PyCharm
+@file: wexinrobot.py
+@time: 2015/10/20 22:06
+"""
 import sys
 
 reload(sys)
@@ -130,5 +130,12 @@ def echo(message,session):
     handel = RobotHandle(message, session)
     info=message.content
     return handel.tuling(info)
-    
-robot.run(server='cherrypy',host='0.0.0.0',port=80)
+
+
+
+# robot.run('auto', port=8888)
+
+
+
+
+

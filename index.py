@@ -23,7 +23,7 @@ import gevent.monkey;
 gevent.monkey.patch_all()
 from werobot.reply import ArticlesReply, Article
 
-robot = werobot.WeRoBot(token='lylinux', enable_session=True)
+robot = werobot.WeRoBot(token='testrobot', enable_session=True)
 
 import re
 from werobot.reply import ArticlesReply, Article
